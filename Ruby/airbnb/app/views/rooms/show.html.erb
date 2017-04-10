@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Book Now', new_booking_path(room_id: @room.id), class: 'btn btn-primary' %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @room.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @room.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= number_to_currency(@room.price) %> per night
+</p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @room.capacity %>
+</p>
+
+<p>
+  <strong>Bathrooms:</strong>
+  <%= @room.bathrooms %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @room.user.email %>
+</p>
+
+<p>
+  <strong>Pets:</strong>
+  <%= yes_no(@room.pets) %>
+</p>
+
+<p>
+  <strong>Smoking:</strong>
+  <%= yes_no(@room.smoking) %>
+</p>
+
+<p>
+  <strong>Wifi:</strong>
+  <%= yes_no(@room.wifi) %>
+</p>
+
+<p>
+  <strong>Bath:</strong>
+  <%= yes_no(@room.bath) %>
+</p>
+
+<p>
+  <strong>Share:</strong>
+  <%= yes_no(@room.share) %>
+</p>
+
+<p>
+  <strong>Parties:</strong>
+  <%= yes_no(@room.parties) %>
+</p>
+
+<% @room.images.each do |image| %>
+  <img src="<%= image.url %>">
+<% end %>
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>
