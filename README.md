@@ -1,24 +1,5 @@
-# README
+# Avocado
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project Avocado is a side project that I am currently working on - the web application is focused for teachers; it is a resource used to distribute and manage student's homeworks.  As of now it is:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## INCOMPLETE
